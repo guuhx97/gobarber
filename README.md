@@ -1,0 +1,1 @@
+<center><h1>GoBarber</h1></center>
