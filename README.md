@@ -1,6 +1,10 @@
 <h1 align="center">
-  <img alt="Gympoint" title="GoBarber" src=".github/gobarber.png" width="50%" />
+  <img alt="Gympoint" title="GoBarber" src=".github/gobarber.png" width="30%" />
+<br>
+GoBarber
 </h1>
+
+
 
 <h4 align="center">
   Project Bootcamp GoStack by Rocketseat
