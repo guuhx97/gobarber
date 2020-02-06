@@ -24,12 +24,12 @@ routes.use(authMiddleware);
 routes.put('/users', UserController.update);
 routes.put('/notifications/:id', NotificationController.update);
 
+routes.delete('/appointments/:id', AppointmentController.delete);
+
 routes.get('/providers', ProviderController.index);
 routes.get('/appointments', AppointmentController.index);
 routes.get('/schedule', ScheduleController.index);
 routes.get('/notifications', NotificationController.index);
-
-routes.delete('/appointments', AppointmentController.delete);
 
 routes.post('/appointments', AppointmentController.store);
 routes.post('/files', upload.single('file'), FileController.store);
