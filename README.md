@@ -4,10 +4,8 @@
 GoBarber
 </h1>
 
-
-
 <h4 align="center">
-  Project Bootcamp GoStack by Rocketseat
+  Projeto Bootcamp GoStack by Rocketseat
 </h4>
 
 ## 👨🏼‍💻 Projeto
@@ -37,7 +35,7 @@ No momento, a aplicação está somente com o back-end da aplicação finalizada
 
 ### 💻 Front-end
   - Em desenvolvimento
-  
+
 ### 📱 Mobile
   - Em desenvolvimento
 
