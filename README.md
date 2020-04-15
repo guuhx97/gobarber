@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Gympoint" title="GoBarber" src=".github/gobarber.png" width="30%" />
+  <img alt="Gympoint" title="GoBarber" src=".github/logo-purple.svg" width="50%" />
 <br>
 GoBarber
 </h1>
