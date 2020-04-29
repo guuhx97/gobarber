@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -21,10 +22,11 @@ Icon.loadFont();
 const Stack = createStackNavigator();
 const Tabs = createBottomTabNavigator();
 
-function NewStack() {
+function NewStack({ navigation }) {
   return (
     <Stack.Navigator
       screenOptions={{
+        resetOnBlur: true,
         headerTransparent: true,
         headerTintColor: '#FFF',
         headerLeftContainerStyle: {
@@ -37,7 +39,7 @@ function NewStack() {
         component={SelectProvider}
         options={{
           title: 'Selecione o prestador',
-          headerLeft: ({ navigation }) => (
+          headerLeft: () => (
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Dashboard');
@@ -53,10 +55,10 @@ function NewStack() {
         component={SelectDateTime}
         options={{
           title: 'Selecione o horário',
-          headerLeft: ({ navigation }) => (
+          headerLeft: () => (
             <TouchableOpacity
               onPress={() => {
-                navigation.goBack();
+                navigation.navigate('SelectProvider');
               }}
             >
               <Icon name="chevron-left" size={20} color="#FFF" />
@@ -71,8 +73,8 @@ function NewStack() {
           title: 'Confirmar agendamento',
           headerLeft: () => (
             <TouchableOpacity
-              onPress={({ navigation }) => {
-                navigation.goBack();
+              onPress={() => {
+                navigation.navigate('SelectDateTime');
               }}
             >
               <Icon name="chevron-left" size={20} color="#FFF" />
@@ -106,6 +108,7 @@ export default function createRouter(isSigned = false) {
         component={Dashboard}
         options={{
           tabBarLabel: 'Agendamentos',
+          // eslint-disable-next-line react/prop-types
           tabBarIcon: ({ color }) => (
             <Icon name="event" size={20} color={color} />
           ),
@@ -117,6 +120,7 @@ export default function createRouter(isSigned = false) {
         options={{
           tabBarVisible: false,
           tabBarLabel: 'Agendar',
+          // eslint-disable-next-line react/prop-types
           tabBarIcon: ({ color }) => (
             <Icon name="add-circle-outline" size={20} color={color} />
           ),
@@ -127,6 +131,7 @@ export default function createRouter(isSigned = false) {
         component={Profile}
         options={{
           tabBarLabel: 'Meu Perfil',
+          // eslint-disable-next-line react/prop-types
           tabBarIcon: ({ color }) => (
             <Icon name="person" size={20} color={color} />
           ),
@@ -135,3 +140,8 @@ export default function createRouter(isSigned = false) {
     </Tabs.Navigator>
   );
 }
+
+NewStack.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  navigation: PropTypes.object.isRequired,
+};
