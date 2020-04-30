@@ -26,9 +26,8 @@ export default function Header() {
               <strong>{profile.name}</strong>
               <Link to="/profile">Meu Perfil</Link>
             </div>
-            <img
-              src={
-                profile.avatar.url ||
+            {console.log(profile)}
+            <img src={
                 'https://api.adorable.io/avatars/50/abott@adorable.png'
               }
               alt="Gustavo Roberto"

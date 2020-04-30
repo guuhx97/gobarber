@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Gympoint" title="GoBarber" src=".github/logo-purple.svg" width="50%" />
+  <img alt="GoBarber" title="GoBarber" src=".github/logo-purple.svg" width="50%" />
 <br>
 GoBarber
 </h1>
@@ -25,7 +25,7 @@ Gobarber é uma aplicação desenvolvida com o objetivo de gerenciar os agendame
 
 ## 🔄 Executar
 
-No momento, a aplicação está somente com o back-end da aplicação finalizada. O front-end e a aplicação mobile estão em fase de desenvolvimento.
+Lembrando que para execução desse projeto deve-se ter disponivel 3 bancos de dados. Postgres, MongoDB e Redis. Durante o processo de desenvolvimento foi utilizado o algumas imagens em docker.
 
 ### 🔧 Back-end
  - Fazer clone do projeto;
@@ -34,10 +34,15 @@ No momento, a aplicação está somente com o back-end da aplicação finalizada
  - Executar `yarn dev` para que o projeto seja executado;
 
 ### 💻 Front-end
-  - Em desenvolvimento
+  - Entrar na pasta `frontend`;
+   - Executar `yarn install` para instalar dependências do projeto;
+   - Executar `yarn start` para que o projeto seja executado;
 
 ### 📱 Mobile
-  - Em desenvolvimento
+   - Entrar na pasta `mobile`;
+ - Executar `yarn install` para instalar dependências do projeto;
+ - Executar `yarn react-native run-android` ou `yarn react-native run-ios` para que seja feito upload do app no emulador;
+ - Executar `yarn react-native start` para que o projeto seja executado;
 
 ## 📝 Licença
 Este projeto está sobre a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.

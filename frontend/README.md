@@ -11,7 +11,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
-## 📱 Interfaces
+## 📱 Front-end
 A aplicação front-end do projeto GoBarber é a parte do sistema que vai ser utilizada pelos prestadores de serviços para que possam gerenciar seus horários. Conta com quatro interface: Login, Cadastro de Usuário, Dashboard e Profile.
 
 
