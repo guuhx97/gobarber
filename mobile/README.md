@@ -23,7 +23,7 @@ O aplicativo mobile da aplicação GoBarber é destinada ao usuário que deseja 
     <img alt="Dashboard" src="../.github/SelecionarPrestador.png" width="200px" />
     <img alt="Schedule" src="../.github/Horarios.png" width="200px" />
     <img alt="Confirm" src="../.github/Confirmar.png" width="200px" />
-    <img alt="Confirm" src="../.github/Confirmar.png" width="200px" />
+    <img alt="Confirm" src="../.github/GoBarber.gif" width="200px" height="398px" />
 </div>
 
 ## 🔄 Executar
